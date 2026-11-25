@@ -23,7 +23,7 @@ This project analyses IPL 2025 match and player performance using Power BI. The 
 
 ## Dashboard preview
 
-![IPL 2025 Power BI dashboard preview](./ipl-2025-dashboard.png)
+![IPL 2025 Power BI dashboard preview](./ipl-2025-dashboard%20(2).png)
 
 *The report overview shows tournament KPIs, team-wise runs and overs, batting and bowling statistics, and player-level tables.*
 
@@ -35,7 +35,7 @@ The figures below are transcribed from the dashboard view:
 |---|---:|
 | Total runs | 25,166 |
 | Innings | 1,116 |
-| Reported `SUM(OVR)` in player table | 2,670.60 |
+| Total legal overs (decimal) | 2,677.67 |
 | Boundary share — fours | 63.44% |
 | Boundary share — sixes | 36.56% |
 | Four-wicket haul share | 88.89% |
@@ -43,9 +43,9 @@ The figures below are transcribed from the dashboard view:
 
 ### Team OVR comparison
 
-The team chart displays **Mumbai Indians (MI)** at 298 and **Kolkata Knight Riders (KKR)** at 238 for the OVR-based comparison. These are the values shown by the report, not independently validated legal-over totals.
+The team chart compares overs bowled by team using the corrected legal-balls calculation.
 
-> **Data-quality note:** The report aggregates the `OVR` column using `SUM(OVR)`. The player table displays values such as `21.30`, which appear to use cricket over notation (overs.balls), not base-10 decimal overs. In cricket notation, the digits after the decimal represent balls (0–5), so summing these values as ordinary decimals can overstate or misstate total overs. Before publishing overs as a calculated total, convert each entry to legal balls (overs × 6 + balls), sum the balls, then convert the result back to overs.balls. Review the OVR card and team chart using that method.
+> **Calculation note:** The source `OVR` values use cricket notation (overs.balls), so the updated report converts each value to legal balls (overs × 6 + balls), sums legal balls, and then displays the result as decimal overs or cricket-format overs. The dashboard's total is 2,677.67 decimal overs, equivalent to 2,677 overs and 4 balls.
 
 ## Project file
 
