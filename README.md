@@ -31,17 +31,17 @@ Add screenshots of the report to an `images/` folder and embed them here:
 
 ## Project file
 
-The Power BI source file (`.pbix`) can be added to this repository as:
+The Power BI report is included in this repository:
 
-`IPL-2025-Analysis.pbix`
+**[Download IPL-2025-Analysis.pbix](./IPL-2025-Analysis.pbix)**
 
-> Note: The dashboard file is not yet attached to this repository. The README documents the report's visible sections; numeric claims and specific findings should be added only after checking the underlying data and measures.
+GitHub displays a “Binary file not shown” message for the `.pbix` file. Download it and open it in Microsoft Power BI Desktop to interact with the report.
 
 ## How to explore
 
-1. Download the `.pbix` file from this repository once uploaded.
-2. Open it in Microsoft Power BI Desktop.
-3. Use the report visuals and available filters to explore team and player performance.
+1. Open the [PBIX file](./IPL-2025-Analysis.pbix) menu and choose **Download** (or use the download link above).
+2. Open the downloaded file in Microsoft Power BI Desktop.
+3. Explore the report's team, batting, bowling, and player-performance visuals.
 
 ## Author
 
