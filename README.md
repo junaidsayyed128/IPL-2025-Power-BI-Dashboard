@@ -35,15 +35,17 @@ The figures below are transcribed from the dashboard view:
 |---|---:|
 | Total runs | 25,166 |
 | Innings | 1,116 |
-| Overs (player summary total) | 2,670.60 |
+| Reported `SUM(OVR)` in player table | 2,670.60 |
 | Boundary share — fours | 63.44% |
 | Boundary share — sixes | 36.56% |
 | Four-wicket haul share | 88.89% |
 | Five-wicket haul share | 11.11% |
 
-### Team overs comparison
+### Team OVR comparison
 
-The team overs chart shows **Mumbai Indians (MI)** at 298 overs and **Kolkata Knight Riders (KKR)** at 238 overs in this report.
+The team chart displays **Mumbai Indians (MI)** at 298 and **Kolkata Knight Riders (KKR)** at 238 for the OVR-based comparison. These are the values shown by the report, not independently validated legal-over totals.
+
+> **Data-quality note:** The report aggregates the `OVR` column using `SUM(OVR)`. The player table displays values such as `21.30`, which appear to use cricket over notation (overs.balls), not base-10 decimal overs. In cricket notation, the digits after the decimal represent balls (0–5), so summing these values as ordinary decimals can overstate or misstate total overs. Before publishing overs as a calculated total, convert each entry to legal balls (overs × 6 + balls), sum the balls, then convert the result back to overs.balls. Review the OVR card and team chart using that method.
 
 ## Project file
 
