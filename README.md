@@ -27,6 +27,24 @@ This project analyses IPL 2025 match and player performance using Power BI. The 
 
 *The report overview shows tournament KPIs, team-wise runs and overs, batting and bowling statistics, and player-level tables.*
 
+## Key dashboard metrics
+
+The figures below are transcribed from the dashboard view:
+
+| Metric | Dashboard value |
+|---|---:|
+| Total runs | 25,166 |
+| Innings | 1,116 |
+| Overs (player summary total) | 2,670.60 |
+| Boundary share — fours | 63.44% |
+| Boundary share — sixes | 36.56% |
+| Four-wicket haul share | 88.89% |
+| Five-wicket haul share | 11.11% |
+
+### Team overs comparison
+
+The team overs chart shows **Mumbai Indians (MI)** at 298 overs and **Kolkata Knight Riders (KKR)** at 238 overs in this report.
+
 ## Project file
 
 The Power BI report is included in this repository:
