@@ -23,11 +23,9 @@ This project analyses IPL 2025 match and player performance using Power BI. The 
 
 ## Dashboard preview
 
-Add screenshots of the report to an `images/` folder and embed them here:
+![IPL 2025 Power BI dashboard preview](./ipl-2025-dashboard.png)
 
-```markdown
-![IPL 2025 dashboard](images/ipl-2025-dashboard.png)
-```
+*The report overview shows tournament KPIs, team-wise runs and overs, batting and bowling statistics, and player-level tables.*
 
 ## Project file
 
